@@ -1,7 +1,7 @@
 # defining a fuction to calculate the square root of a positive real number
 # using Newton's method
 
-A = int(input("Input value to find square root "))
+A = float(input("Please input positive value "))
 
 def sqrt(A):
     x = A
@@ -19,4 +19,6 @@ def sqrt(A):
 
 print(sqrt(A))
 
+# code doesn't work with non-straight forward square roots
+# look at using floor function to find approx square roots for tricky values
      
