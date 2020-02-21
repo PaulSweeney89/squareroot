@@ -62,7 +62,7 @@ Google Sheet Result (5 iternations):
 
 2. This is due to using the math.floor() function which ends up forcing the f1 function to converge on zero, mostly likely reducing the number of internations & approximations for x.
 
-3. A possible improvement to the program and the accurancy of the squareroot calculation would be to replace the 'while x > 0 loop' with a 'for loop' with either a user defined or fixed number of iternations. More iternations = more accurancy for values and functions where Newton's Method holds through. 
+3. A possible improvement to the program and the accurancy of the squareroot calculation would be to replace the 'while x > 0 loop' with a 'for loop' with either a user defined or fixed number of iternations. More iternations = more accurancy for values and functions where Newton's Method holds true. 
 
 References
 
