@@ -5,7 +5,7 @@ import math
 
 while True:                         # While loop to loop input prompt until value inputted is positive.
 
-    A = float(input("Please input positive value ")
+    A = float(input("Please input positive value "))
 
     if A > 0:                       # If input value is positive break the 
         break                       # while loop and proceed with program execution.
