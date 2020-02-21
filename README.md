@@ -40,11 +40,29 @@ def sqrt(A):
   - Function 2: f2 = 2 * x    (derivative of f1)
   - x = x - f1 / f2           (solving for a better approximation of x using Newton's method)
   - while loop re-iterates using the improved approximation value of x each time until x^2 - A = 0 or in other words we solve for x the square root value of A.
-  - For straight forward sqrt numbers i.e, 4, 16, 36 this method works well. However for non-straight forward sqrt numbers the approximations values x can never fully reach the actual sqrt value of A and therefore the while loop ends up in a infinate loop (x^2 - A never reaches 0). Therefore the math.floor() function has been introduced to force the function to zero.
+  - For straight forward sqrt numbers i.e, 4, 16, 36 this method works well. However for non-straight forward sqrt numbers the approximate value for x can never fully reach the actual sqrt value of A and therefore the while loop ends up in a infinate loop (x^2 - A never reaches 0 for certain numbers). Therefore the math.floor() function has been introduced to force the function to converge on zero.
 - Therefore the program only gives approximate values for the **sqrt(A)** and so the program results have been rounded to 1 decimal place.
 
 Example of input & output of Program:
+```
+python squareroot.py
+Please input positive value 14.5
+The square root of  14.5 is  3.8
+```
 
+Comments:
+
+1. By comparing the unrounded square root value calculated in the program and comparing it to the value calculated using the google sheet linked below, it was found that program didn't calculate the square root value as accurately as the spreadsheet. 
+
+Program result:
+>3.8092816328050976
+
+Google Sheet Result (5 iternations):
+>3.807886553
+
+2. This is due to using the math.floor() function which ends up forcing the f1 function to converge on zero, mostly likely reducing the number of internations & approximations for x.
+
+3. A possible improvement to the program and the accurancy of the squareroot calculation would be to replace the 'while x > 0 loop' with a 'for loop' with either a user defined or fixed number of iternations. More iternations = more accurancy for values and functions where Newton's Method holds through. 
 
 References
 
