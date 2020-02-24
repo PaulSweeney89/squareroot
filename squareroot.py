@@ -28,4 +28,4 @@ def sqrt(A):                        # Define fuction called sqrt with argument A
 ans = sqrt(A)
 
 print("The square root of ", A , "is ", round(ans,1))       # sqrt value rounded to 1 decimal place.
-# print(ans)
+print(ans)
