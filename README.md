@@ -55,7 +55,7 @@ The square root of  14.5 is  3.8
 
 Comments:
 
-1. By comparing the unrounded square root value calculated in the program and comparing it to the value calculated using the google sheet linked below, it was found that program didn't calculate the square root value as accurately as the spreadsheet. 
+1. By taking the unrounded square root value calculated in the program and comparing it to the value calculated using the google sheet linked below, it was found that program didn't calculate the square root value as accurately as the spreadsheet. 
 
 Program result:
 >3.8092816328050976
