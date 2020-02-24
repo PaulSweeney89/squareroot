@@ -38,7 +38,8 @@ def sqrt(A):
   - Initiate while loop, starting with x = 1 and loop for all values with x > 0 
   - Function 1: f1 = x^2 - A  (from A = x^2)
   - Function 2: f2 = 2 * x    (derivative of f1)
-  - x = x - f1 / f2           (solving for a better approximation of x using Newton's method)
+  - x = x - f1 / f2           (solving for a better approximation of x using Newton's method, see screenshot)
+  
   - while loop re-iterates using the improved approximation value of x each time until x^2 - A = 0 or in other words we solve for x the square root value of A.
   - For straight forward sqrt numbers i.e, 4, 16, 36 this method works well. However for non-straight forward sqrt numbers the approximate value for x can never fully reach the actual sqrt value of A and therefore the while loop ends up in a infinate loop (x^2 - A never reaches 0 for certain numbers). Therefore the math.floor() function has been introduced to force the function to converge on zero.
 - Therefore the program only gives approximate values for the **sqrt(A)** and so the program results have been rounded to 1 decimal place.
@@ -62,9 +63,12 @@ Google Sheet Result (5 iternations):
 
 2. This is due to using the math.floor() function which ends up forcing the f1 function to converge on zero, mostly likely reducing the number of internations & approximations for x.
 
-3. A possible improvement to the program and the accurancy of the squareroot calculation would be to replace the 'while x > 0 loop' with a 'for loop' with either a user defined or fixed number of iternations. More iternations = more accurancy for values and functions where Newton's Method holds true. 
+3. A possible improvement to the program and the accurancy of the squareroot calculation would be to replace the 'while x > 0 loop' with a 'for loop' with either a user defined or fixed number of iternations, while also removing the math.floor() function
+See sqrt_test.py script included in repository.
 
-References
+References:
+
+[Newton's Method Wikipedia](https://en.wikipedia.org/wiki/Newton's_method)
 
 [Finding square root using Newton's Method](https://www.math.upenn.edu/~kazdan/202F09/sqrt.pdf])
 
