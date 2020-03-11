@@ -73,7 +73,7 @@ References:
 
 [Newton's Method Wikipedia](https://en.wikipedia.org/wiki/Newton's_method)
 
-[Finding square root using Newton's Method](https://www.math.upenn.edu/~kazdan/202F09/sqrt.pdf])
+[Finding square root using Newton's Method - Jerry L. Kazdan](https://www.math.upenn.edu/~kazdan/202F09/sqrt.pdf)
 
 [Newton's Method Youtube](https://www.youtube.com/watch?v=1uN8cBGVpfs)
 
